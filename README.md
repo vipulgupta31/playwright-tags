@@ -15,7 +15,7 @@ export LT_USERNAME=your_username
 export LT_ACCESS_KEY=your_access_key
 ```
 
-## ▶️ Run tests with tag at describe level
+## 🔀 Run tests with tag at describe level
 ```bash
 npx playwright test --grep @smoke
 ```
