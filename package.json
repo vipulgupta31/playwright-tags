@@ -1,10 +1,9 @@
 {
-  "name": "playwright-node-sharding",
+  "name": "playwright-tags",
   "version": "1.0.0",
-   "main": "index.js",
-  "scripts": {},
+  "main": "index.js",
   "devDependencies": {
-    "@playwright/test": "^1.54.1",
-    "@types/node": "^24.1.0"
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.1"
   }
 }
