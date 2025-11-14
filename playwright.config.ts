@@ -7,7 +7,7 @@ const ltAccessKey = process.env.LT_ACCESS_KEY;
 export default defineConfig({
   testDir: './tests',
   reporter: 'html',
-   // ✅ To define browser and OS combination. You can add a new project to add more browser+OS combinations
+   // To define browser and OS combination. You can add a new project to add more such combinations
   projects: [
     {
       name: 'Chrome-Windows',
