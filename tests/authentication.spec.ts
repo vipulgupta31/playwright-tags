@@ -5,7 +5,7 @@ test('login with valid credentials', { tag : ['@auth' , '@sanity'] }, async ({ p
  await page.locator('id=username').fill('valid@example.com');
  await page.locator('id=password').fill('test@123');
  await page.locator('button[type="submit"]').nth(1).click();
-
+ await expect(page.getByText('Login Successful!')).toBeVisible();
 });
 
 test('login with invalid credentials', { tag : ['@auth', "@negative" ] }, async ({ page }) => {
@@ -13,4 +13,5 @@ test('login with invalid credentials', { tag : ['@auth', "@negative" ] }, async 
  await page.locator('id=username').fill('invalid@example.com');
  await page.locator('id=password').fill('test@123');
  await page.locator('button[type="submit"]').nth(1).click();
+  await expect(page.getByText('Invalid Credentials.')).toBeVisible();
 });
